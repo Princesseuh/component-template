@@ -4,5 +4,5 @@
     "source.fixAll": true
   },
   "cSpell.words": ["Astro"],
-  "prettier.documentSelectors": ["**/*.astro"],
+  "prettier.documentSelectors": ["**/*.astro"]
 }
