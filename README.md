@@ -1,23 +1,20 @@
-# Astro Component Template
+# Astro Component Template 🧑‍🚀
 
-This is a template meant to ease the development of components for [Astro](https://astro.build/). It does so by providing you with:
+This is a template meant to ease the development of components for [Astro](https://astro.build/) that are intended for distribution. It does so by providing you with:
 
 - A clear default directory structure
 - Proper TypeScript settings for working with Astro
-- Default settings for ESLint, Prettier and EditorConfig inspired by the formatting used in the Astro project itself (also, [they're typed 👀](https://princesseuh.netlify.app/article/youshouldtypeyourconfigfiles/))
-- Ready-to-use testing tools powered by the libraries also used by the Astro project (Mocha and Chai), also contain [astro-component-tester](https://github.com/Princesseuh/astro-component-tester) to help you test your component's output
+- Default settings for ESLint, Prettier and EditorConfig inspired by the formatting used in the Astro project itself (also, [the config files are typed 👀](https://princesseuh.netlify.app/article/youshouldtypeyourconfigfiles/))
+- Ready-to-use testing tools powered by the libraries also used by the Astro project (Mocha and Chai), also contain [astro-component-tester](https://github.com/Princesseuh/astro-component-tester) to help you test the output of your component(s)
 - Preconfigured VS Code workspace settings file with settings meant to make development cozy and nice
 
-Hopefully, all of this together will provide you with a fun and comfortable development environnement for working on your Astro component
+Hopefully, all of this together will provide you with a fun and comfortable development environnement for working on your Astro component! 🚀 Also, never forget that this is only a template to get you started, if you don't agree with any of the choices made, feel free to change it to fit your project better!
 
-**Don't forget:** You should edit `package.json` with the info relevant to your project, such as a proper `name`, a license, a link to the repository for the npm website and other settings
-
-**Note:** At the end of the day, this is only a template meant to get yourself started quickly. If you do not agree with any of the settings, naming conventions, the folder structure or anything else, you can and you should change things so things are easier and nicer for your needs and wants
+**⚠️ Don't forget:** You should edit `package.json` with the info relevant to your project, such as a proper `name`, a license, a link to the repository for the npm website and other settings
 
 ## Folder Structure
 
 ```plaintext
-/
 ├── .vscode/                    # VS Code settings folder
 │   ├── settings.json           # Workspace settings
 │   └── extensions.json         # Very strongly recommended extensions to install
@@ -47,7 +44,7 @@ In VS Code, you can access those commands in the Explorer in the `NPM Scripts` s
 
 ### Is this official?
 
-No, Astro does not have an official template for component and other options than this one exists. At the end of the day, you should choose the one that fits your needs the best!
+No, Astro does not have an official template for component and other options than this one exists. You should choose the one that fits your needs the best!
 
 ### Which package manage should I use?
 
