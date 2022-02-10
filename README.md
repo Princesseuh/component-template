@@ -10,7 +10,7 @@ This is a template meant to ease the development of components for [Astro](https
 
 Hopefully, all of this together will provide you with a fun and comfortable development environnement for working on your Astro component! 🚀 Also, never forget that this is only a template to get you started, if you don't agree with any of the choices made, feel free to change it to fit your project better!
 
-**⚠️ Don't forget:** You should edit `package.json` with the info relevant to your project, such as a proper `name`, a license, a link to the repository for the npm website and other settings
+**⚠️ Don't forget:** You should edit `package.json` with the info relevant to your project, such as a proper `name`, a license, a link to the repository for the npm website and other settings. You should also adjust the Astro `peerDependency` to the lowest version of Astro you support
 
 ## Folder Structure
 

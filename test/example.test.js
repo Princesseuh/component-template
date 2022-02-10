@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import { buildComponent } from 'astro-component-tester';
+import { getComponentOutput } from 'astro-component-tester';
 
 describe('Example Tests', () => {
 	// Simple test to get us started with the syntax
@@ -11,9 +11,9 @@ describe('Example Tests', () => {
 	describe('Component test', async () => {
 		let component;
 
-		// First build the component to get its output, this returns an object containing the generated html (`.html`)
+		// First get the component's output, this returns an object containing the generated html (`.html`)
 		before(async () => {
-			component = await buildComponent('./src/Component.astro');
+			component = await getComponentOutput('./src/Component.astro');
 		});
 
 		// Unless you modified /src/Component.astro, this should pass, as the component is empty apart from the frontmatter
