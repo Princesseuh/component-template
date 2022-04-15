@@ -16,9 +16,9 @@ describe('Example Tests', () => {
 			component = await getComponentOutput('./src/Component.astro');
 		});
 
-		// Unless you modified /src/Component.astro, this should pass, as the component is empty apart from the frontmatter
+		// Unless you modified /src/Component.astro, this should pass, as the component is empty apart from the frontmatter and new lines
 		it('example component should be empty', () => {
-			expect(component.html).to.equal('<head></head><body></body>');
+			expect(component.html).to.equal('\n\n');
 		});
 	});
 });
