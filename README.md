@@ -1,6 +1,6 @@
 # Astro Component Template 🧑‍🚀
 
-This is a template meant to ease the development of components for [Astro](https://astro.build/) that are intended for distribution. It does so by providing you with:
+This is [an unofficial template](#how-is-this-different-from-the-official-component-template) meant to ease the development of components for [Astro](https://astro.build/) that are intended for distribution. It does so by providing you with:
 
 - A clear default directory structure
 - Proper TypeScript settings for working with Astro
@@ -17,7 +17,7 @@ Hopefully, all of this together will provide you with a fun and comfortable deve
 ```plaintext
 ├── .vscode/                    # VS Code settings folder
 │   ├── settings.json           # Workspace settings
-│   └── extensions.json         # Very strongly recommended extensions to install
+│   └── extensions.json         # Recommended extensions to install
 ├── src/                        # Your component source code
 │   ├── Component.astro         # Example component file
 │   └── main.ts                 # Example source code file
@@ -42,9 +42,28 @@ In VS Code, you can access those commands in the Explorer in the `NPM Scripts` s
 
 ## Frequently asked questions
 
-### Is this official?
+### How is this different from [the official component template](https://github.com/withastro/astro/tree/main/examples/component)?
 
-No, Astro does not have an official template for component and other options than this one exists. You should choose the one that fits your needs the best!
+At the end of the day, they both have the same goal: Giving you a template to start from to build a component for Astro. However, they have slightly different philosophies
+
+Notably, the official template uses a mono-repo structure, whereas this template uses a normal, straightforward repo. Additionally, this template is a bit more opinionated than the official one, giving you preconfigured support for ESLint, Prettier, VS Code and EditorConfig and testing support
+
+It's up to you to choose which one you prefer, they're both good options!
+
+### How do I try my component in development?
+
+> `npm` is used here for brevity purpose, the same concept applies to other package managers!
+
+This template is a normal npm package, which mean that you can install it as a local folder or using [npm link](https://docs.npmjs.com/cli/v8/commands/npm-link).
+
+For example, with the following folder structure :
+
+```plaintext
+├── component/   # Your component using this template
+└── project/     # A standard Astro project
+```
+
+You can go into `project` and type the following command: `npm link ../component`. Changes to your component will be automatically reflected in your Astro project!
 
 ### Which package manage should I use?
 
