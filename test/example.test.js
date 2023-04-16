@@ -13,12 +13,12 @@ describe('Example Tests', () => {
 
 		// First get the component's output, this returns an object containing the generated html (`.html`)
 		before(async () => {
-			component = await getComponentOutput('./src/Component.astro');
+			component = await getComponentOutput('./src/Component.astro', { message: 'World' });
 		});
 
 		// Unless you modified /src/Component.astro, this should pass, as the component is empty apart from the frontmatter and new lines
 		it('example component should be empty', () => {
-			expect(component.html).to.equal('\n');
+			expect(component.html).to.equal('\n<div>Hello World!</div>');
 		});
 	});
 });

@@ -1,14 +1,21 @@
-/** @type {import("@types/eslint").Linter.Config} */
 module.exports = {
   env: {
     node: true,
   },
-  parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'prettier'],
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
+  extends: ['plugin:astro/recommended'],
+  overrides: [
+    {
+      files: ['*.astro'],
+      parser: 'astro-eslint-parser',
+      parserOptions: {
+        parser: '@typescript-eslint/parser',
+        extraFileExtensions: ['.astro'],
+      },
+    },
+    {
+      files: ['*.ts'],
+      parser: '@typescript-eslint/parser',
+    },
   ],
   rules: {
     // We don't want to leak logging into our user's console unless it's an error
