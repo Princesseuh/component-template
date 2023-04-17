@@ -1,9 +1,4 @@
 {
-  "compilerOptions": {
-    "moduleResolution": "node",
-    "module": "ESNext",
-    "allowJs": true,
-    "noEmit": true
-  },
+  "extends": "astro/tsconfigs/base",
   "include": ["index.ts", "src"]
 }

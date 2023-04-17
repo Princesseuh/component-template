@@ -7,6 +7,7 @@ This is [an unofficial template](#how-is-this-different-from-the-official-compon
 - Default settings for ESLint, Prettier and EditorConfig inspired by the formatting used in the Astro project itself (also, [the config files are typed 👀](https://princesseuh.netlify.app/article/youshouldtypeyourconfigfiles/))
 - Ready-to-use testing tools powered by the libraries also used by the Astro project (Mocha and Chai), also contains [astro-component-tester](https://github.com/Princesseuh/astro-component-tester) to help you test the output of your component(s)
 - Preconfigured VS Code workspace settings file with settings meant to make development cozy and nice
+- Use a example folder to help previewing the Component without npm link
 
 Hopefully, all of this together will provide you with a fun and comfortable development environnement for working on your Astro component! 🚀 Also, never forget that this is only a template to get you started, if you don't agree with any of the choices made, feel free to change it to fit your project better!
 
@@ -18,6 +19,7 @@ Hopefully, all of this together will provide you with a fun and comfortable deve
 ├── .vscode/                    # VS Code settings folder
 │   ├── settings.json           # Workspace settings
 │   └── extensions.json         # Recommended extensions to install
+├── example/                    # Preview Your component here
 ├── src/                        # Your component source code
 │   ├── Component.astro         # Example component file
 │   └── main.ts                 # Example source code file
@@ -37,6 +39,7 @@ The following npm scripts are provided to lint and format your project:
 | `npm run test`   | Run tests using Mocha                                         |
 | `npm run format` | Format your project using Prettier, this edits files in-place |
 | `npm run lint`   | Lint your project using ESLint                                |
+| `npm run dev`    | Run dev inside example project                                |
 
 In VS Code, you can access those commands in the Explorer in the `NPM Scripts` section.
 
