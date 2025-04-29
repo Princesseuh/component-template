@@ -1,1 +1,1 @@
-// Write your component's code here!
+// Write any code re-used among your components here!
