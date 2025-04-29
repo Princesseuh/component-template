@@ -3,6 +3,5 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit"
   },
-  "cSpell.words": ["Astro"],
   "prettier.documentSelectors": ["**/*.astro"]
 }
